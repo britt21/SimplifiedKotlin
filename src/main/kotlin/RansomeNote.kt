@@ -1,26 +1,26 @@
 
 
 fun main() {
-    println(canConstruct("bcb", "bbc"))
-
+    println(canConstruct("ac", "ab"))
 }
+
 
 fun canConstruct(ransomNote: String, magazine: String): Boolean {
 
     var lettercount = mutableMapOf<Char,Int>()
 
-    ransomNote.toCharArray().forEach { char ->
+    magazine.toCharArray().forEach { char ->
         lettercount[char] = lettercount.getOrDefault(char,0) + 1
 
         println("dk : ${lettercount}")
     }
 
-    magazine.toCharArray().forEach { char ->
+    ransomNote.toCharArray().forEach { char ->
         var count =   lettercount.getOrDefault(char,0)
         if (count == 0){
             return false
         }
-//        lettercount[char] =  count- 1
+        lettercount[char] =  count - 1
 
         println(count)
     }
