@@ -67,8 +67,8 @@ public class MasterKeyGen {
 
 
     public static void main(String[] args) {
-        var rightpad = RightPad("2212",16,"5061191608212220947");
-        var leftpad = LeftPad("0",4,"5061191608212220947");
+        var rightpad = RightPad("2143",19,"5199111215194619");
+        var leftpad = LeftPad("0",4,"5199111215194619");
         System.out.println("LEFTPAD    " + leftpad);
         System.out.println("RIGHTPAD    " + rightpad);
 
@@ -77,9 +77,6 @@ public class MasterKeyGen {
         System.out.println(""+ dexor);
 
     }
-
-
-
 
 };
 

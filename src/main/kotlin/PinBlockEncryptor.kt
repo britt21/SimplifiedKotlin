@@ -1,5 +1,5 @@
 fun main() {
-    val pinBlock = generatePinBlock("2143", "5199111215194619")
+    val pinBlock = generatePinBlock("2212", "5061191608212220947")
     println("Sample Output -> $pinBlock")
 }
 

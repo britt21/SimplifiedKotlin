@@ -1,0 +1,28 @@
+import java.util.Base64
+
+
+
+fun generateBearerToken(input: String): String {
+    val encodedString = Base64.getEncoder().encodeToString(input.toByteArray())
+    return encodedString
+}
+
+//fun main() {
+//    val input = "BrightUgwu2$"
+//    val bearerToken = generateBearerToken(input)
+//    println(bearerToken)
+//}
+
+
+//fun main() {
+//    val hexString = "7727335c8ea13e820a1c8b34c55d075fdcdbc737deda95b47a26da24b57198e3921479d7465afbfbe361c8ba9931738e68819fda301c1c269227b1b486476d8ab001aee58d71d46e66411273a986f9c74887ba22f7901fbcf57be34ba942e6d46120892fc91f0c355f9e0b23b0cf5fd472d63a8e49712b2d5e595366d9c8c47fa9284a2b00c97fb83b582f4696272fad4548403d3af60730d2a45d75f3593025a2e98677f37ce13ee8522a2ab0667b7ff7460167a698064076e483fc14894c6ec7c83df8cef7f101f0bab990fc3f414b3892d09e943478cbadc29245883df36b08da79d9d1903183a9d7dd062effad92e876e9d72ce76d5e17d6ec798c02aebc46e7a1152c0b1ea389b10e10b40f27073a641c6084a3f4714ec1138848cd7ae05955d26ad970cd5e9559b5d2f2fb2c2d0be02aafada116220c2f3e657f0148d9759b9d752eed49127411671743259b057a8a05a9ce4026a80f944ed9331d7f225578831383188ee3aebe20d4b08e12bc5bd5caf3d1bd01ca8cd3430b94722b1327deebf4e326093fd73a169063b561128c9f03e128e3524bed825151800d43e65fb160f21c14ce674f5bd79e5c57c38e56a2833fec94cc248bdd32af87672104106450c6a974fa82ebf4e9699ac4ea10ebd91afe6f61aad5034a7242e6977639c28bec1e699c1fbcfe0196ea78218db69c4c7bc36519b4961283c2e51f3cec1f8bdc7876a77b1fc81ab4ecc16cbd771c30115e1b9c93882e20463feca9b49e1f3285181e1ad19ccc86753dd67ec936513b08ca81e767965165f4d53f9ff186f84395a4a60b5a367eb5f7d0f2520af3f4b769a4e453d1bd90a6dfccd4ffbb11196bbbb0b9169d1768b3d78937307f3e7036ffbdde9ee9a217ec3e848059ef4fb0c297ef8885f6fef72d3ce70aee4497d5814a66e3dd430b1a738201481fedee4b77868f8596a18e7bc8ad7038b62ca1c3ac64b51ef0c9aba11c3e63bb49c45d3700d42f2c55d0b4cd29ffa02438d72a305788cde67856eff121a940c080b35da9762d087f12590a06298873261df92adcb9569a13be1a1b8b5bf5db9d495acad34cf5e280715d96edc0c4db6b33c0eaaaa20ec810a34cda5a265a5a9070e72144f1a1720565a728b41e9d66ed9abedb9699f6bbcd51938ac23199f7fc84d25273fd472a97892dc7b36dc29a0faf1b27b6"
+//
+//    // Convert hexadecimal string to ByteArray
+//    val binaryData = hexString.chunked(2) { it.toInt(16).toByte() }.toByteArray()
+//
+//    // Decode binary data to a String
+//    val decodedString = String(binaryData, Charsets.UTF_8)
+//
+//    // Print the decoded string
+//    println(decodedString)
+//}
